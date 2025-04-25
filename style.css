@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  height: 100vh;
+  width: 100vh;
+  background-color: #1e1e1e;
+  margin: 0rem;
+  font-family: 'Raleway';
+  color: white;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body a {
+  text-decoration: none !important;
+  color: white;
+}
+
+.frontdrop,
+.container {
+  height: 75%;
+  width: 80%;
+  border-radius: 1rem;
+  display: grid;
+  align-items: center;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  color: white;
+  animation: expand .8s ease forwards;
+}
+
+.frontdrop {
+  width: 100%;
+  z-index: 10000;
+  animation: fadeOut .7s ease-out forwards;
+}
+
+#page,
+#navbar {
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  /* pointer-events: none; */
+}
+
+#navbar {
+  left: 22px;
+  z-index: 9995;
+  top: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+}
+
+#navbar div {
+  margin-right: 22px;
+  margin-left: 22px;
+  white-space: nowrap;
+  opacity: 0.4;
+}
+
+#navbar div:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+#gallery {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  margin-left: calc(-15vmin);
+}
+
+#gallery .image {
+  width: 30vmin;
+  height: 48vmin;
+  object-fit: cover;
+  object-position: 100% 50%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#page {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  margin-inline: auto;
+  width: fit-content;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+#page>div {
+  float: left;
+  text-align: center;
+  will-change: transform;
+}
+
+#page-num {
+  position: relative;
+  height: 20px;
+  width: 24px;
+  overflow: hidden;
+}
+
+#page-numscroll {
+  will-change: transform;
+  top: 0;
+  left: 0;
+}
+
+#page-sep {
+  width: 24px;
+}
+
+#page-count {
+  width: 24px;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0px);
+    z-index: 0;
+  }
+}

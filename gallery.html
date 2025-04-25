@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Gallery</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <div>
+      <a class="home" href="home.html">Home</a>
+    </div>
+    <div>
+      <a class="show-gallery" href="gallery.html">Gallery</a>
+    </div>
+    <div>
+      <a class="about" href="about.html">About</a>
+    </div>
+    <div>
+      <a class="contact" href="contact.html">Contact</a>
+    </div>
+    <div>
+      <a class="about" href="members.html">Members</a>
+    </div>
+  </nav>
+
+  <div class="frontdrop" style="height: 80%; width: 90%; background-color: #1e1e1e;">
+  </div>
+  <div id="gallery" data-mouse-down-at="0" data-prev-percentage="0">
+
+    <a href="sea/whaleshark.html">
+      <img class="image"
+        src="https://www.nhm.ac.uk/content/dam/nhm-www/discover/whale-sharks/whale-shark-swimming-full-width.jpg.thumb.1160.1160.png"
+        alt="Whale Shark" width="1920" height="1080" draggable="false">
+    </a>
+    <a href="air/treesparrow.html">
+      <img class="image"
+        src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Tree_Sparrow_at_Talisay%2C_Batangas%2C_Luzon%2C_Philippines_%28153872891%29.jpg"
+        alt="Tree Sparrow" width="1920" height="1080" draggable="false">
+    </a>
+    <a href="sea/surgeonfish.html">
+      <img class="image"
+        src="https://www.fishi-pedia.com/wp-content/uploads/2019/03/Acanthurus-pyroferus-South-Rinca-Island-Indonesia.jpg"
+        alt="Chocolate Surgeonfish" width="1920" height="1080" draggable="false">
+    </a>
+    <a href="air/zebrafinch.html">
+      <img class="image"
+        src="https://cdn.britannica.com/10/250610-050-BC5CCDAF/Zebra-finch-Taeniopygia-guttata-bird.jpg"
+        alt="Zebra Finch" width="1920" height="1080" draggable="false">
+    </a>
+    <a href="sea/harlequin.html">
+      <img class="image" src="https://www.uwphotographyguide.com/images/2/js_h2.jpg" alt="Harlequin Shrimp" width="1920"
+        height="1080" draggable="false">
+    </a>
+    <a href="air/budgerigar.html">
+      <img class="image"
+        src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiUw0HEHRDQJnuEG1ljekNTgsUdQrRTVatpcPnFbAL9h5iIzZ6-rRSAM9fe7oE0bnrNognGY6U0RQ0ZoQcomTWgQ"
+        alt="Budgerigar" width="1920" height="1080" draggable="false">
+    </a>
+    <a href="sea/frogfish.html">
+      <img class="image"
+        src="https://images.unsplash.com/photo-1623494350623-ec0f8a4b73aa?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Warty Frogfish" width="1920" height="1080" draggable="false">
+    </a>
+    <a href="air/baldeagle.html">
+      <img class="image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6xFOxKMskzXiKJ1zA0qxkLaN1fLpxOFPeg&usqp=CAU"
+        alt="Bald Eagle" width="1920" height="1080" draggable="false">
+    </a>
+    <a href="sea/sergeant.html">
+      <img class="image" src="https://churaumi.okinawa/userfiles/fish_images/sanngogyo/oyabittyare.jpg"
+        alt="Indo-Pacific Sergeant" width="1920" height="1080" draggable="false">
+    </a>
+    <a href="air/americangoldfinch.html">
+      <img class="image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsstIeB5S6z3vsrfPrzgphOX9vj5TOx3oJMw&usqp=CAU"
+        alt="American Goldfinch" width="1920" height="1080" draggable="false">
+    </a>
+  </div>
+
+  <div id="page">
+    <div id="page-num" style="transform: translate3d(0%, 0%, 0px);">
+      <div id="page-numscroll" style="transform: translate3d(0px, 0px, 0px);">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+    </div>
+    <div id="page-sep" style="transform: scaleX(1);">—</div>
+    <div id="page-count" style="transform: translate3d(0%, 0%, 0px);">10</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
